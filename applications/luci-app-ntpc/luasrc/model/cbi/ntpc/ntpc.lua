@@ -8,7 +8,7 @@ s = m:section(TypedSection, "ntpclient", translate("General"))
 s.anonymous = true
 s.addremove = false
 
-s:option(DummyValue, "_time", translate("Current system time")).value = os.date("%c")
+s:option(DummyValue, "_time", translate("Current system time")).value = os.date("%Y-%m-%d %X")
 
 interval = s:option(Value, "interval", translate("Update interval (in seconds)"))
 interval.datatype = "and(uinteger,min(1))"
