@@ -7,7 +7,7 @@ local ut = require "luci.util"
 local m, s, o
 
 m = Map("shadowsocks-libev",
-	translate("Local Instances"),
+	translate("ShadowSocks") .. " - " .. translate("Local Instances"),
 	translate("Instances of shadowsocks-libev components, e.g. ss-local, \
 			   ss-redir, ss-tunnel, ss-server, etc.  To enable an instance it \
 			   is required to enable both the instance itself and the remote \

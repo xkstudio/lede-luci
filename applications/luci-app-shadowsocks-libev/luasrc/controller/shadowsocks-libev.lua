@@ -6,7 +6,7 @@ module("luci.controller.shadowsocks-libev", package.seeall)
 function index()
 	entry({"admin", "services", "shadowsocks-libev"},
 		alias("admin", "services", "shadowsocks-libev", "instances"),
-		_("Shadowsocks-libev"), 59)
+		_("ShadowSocks"), 9)
 
 	entry({"admin", "services", "shadowsocks-libev", "instances"},
 		arcombine(cbi("shadowsocks-libev/instances"), cbi("shadowsocks-libev/instance-details")),

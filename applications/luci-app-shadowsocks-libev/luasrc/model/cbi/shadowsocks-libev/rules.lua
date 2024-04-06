@@ -6,7 +6,7 @@ local ss = require("luci.model.shadowsocks-libev")
 local m, s, o
 
 m = Map("shadowsocks-libev",
-	translate("Redir Rules"),
+	translate("ShadowSocks") .. " - " .. translate("Redir Rules"),
 	translate("On this page you can configure how traffics are to be \
 		forwarded to ss-redir instances. \
 		If enabled, packets will first have their src ip addresses checked \
