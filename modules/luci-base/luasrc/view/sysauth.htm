@@ -20,25 +20,25 @@
 			<div class="cbi-value">
 				<label class="cbi-value-title"><%:Username%></label>
 				<div class="cbi-value-field">
-					<input class="cbi-input-user" type="text" name="luci_username" value="<%=duser%>" />
+					<input class="cbi-input-user" type="text" name="luci_username" placeholder="<%:Username%>" />
 				</div>
 			</div>
 			<div class="cbi-value cbi-value-last">
 				<label class="cbi-value-title"><%:Password%></label>
 				<div class="cbi-value-field">
-					<input class="cbi-input-password" type="password" name="luci_password" />
+					<input class="cbi-input-password" type="password" name="luci_password" placeholder="<%:Password%>" />
 				</div>
 			</div>
 		</fieldset></fieldset>
 	</div>
 
-	<div>
+	<div style="margin-left:266px;">
 		<input type="submit" value="<%:Login%>" class="cbi-button cbi-button-apply" />
 		<input type="reset" value="<%:Reset%>" class="cbi-button cbi-button-reset" />
 	</div>
 </form>
 <script type="text/javascript">//<![CDATA[
-	var input = document.getElementsByName('luci_password')[0];
+	var input = document.getElementsByName('luci_username')[0];
 	if (input)
 		input.focus();
 //]]></script>
