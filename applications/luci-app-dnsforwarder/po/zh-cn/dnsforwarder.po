@@ -1,5 +1,5 @@
-msgid "Dnsforwarder"
-msgstr "DNSForwarder"
+msgid "DNS Forwarder"
+msgstr "DNS Forwarder"
 
 msgid "Enable"
 msgstr "启用"
