@@ -14,9 +14,9 @@
 	local categories = disp.node_childs(tree)
 %>
    <footer style="text-align:center;margin:28px 14px;">
-    <a href="https://github.com/xkstudio/lede-luci" target="_blank">Powered by <%= ver.luciname %> (<%= ver.luciversion %>)</a> / <%= ver.distversion %>
+    <a href="https://github.com/xkstudio/lede-luci" target="_blank">Powered by <%= ver.luciname %> (<%= ver.luciversion %>)</a><br><%= ver.distversion %>
     <% if #categories > 1 then %>
-     <ul class="breadcrumb pull-right" id="modemenu">
+    <ul class="breadcrumb pull-right" id="modemenu">
 	    <% for i, r in ipairs(categories) do %>
 		    <li<% if request[1] == r then %> class="active"<%end%>><a href="<%=controller%>/<%=r%>/" target="_blank"><%=striptags(translate(tree.nodes[r].title))%></a> <span class="divider">|</span></li>
 	    <% end %>
