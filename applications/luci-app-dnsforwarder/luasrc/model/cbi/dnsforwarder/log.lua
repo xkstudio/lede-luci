@@ -11,7 +11,7 @@ end
 
 m = Map("dnsforwarder")
 m.title = translate("运行日志")
-m.description = translate("如果想观察日志，需要在配置文件中写明LogOn true 和 LogFileFolder /var/log")
+m.description = translate("如果想观察日志，需要在配置文件中写明 LogOn true 和 LogFileFolder /var/log")
 
 s = m:section(TypedSection, "arguments")
 s.addremove = false

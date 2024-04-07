@@ -37,7 +37,7 @@ else if dnsforwarder_on then
 	end
 end
 
-m = Map("dnsforwarder", translate("Dnsforwarder"), translate("Dnsforwarder是企业级DNS服务器，可以通过TCP协议进行DNS解析,可以方便的使用iptables进行透明代理，配合ipset、GFWList使用效果更佳。默认上游服务器为114DNS，SSR和Redsocks的GFWList模式要依赖本软件包提供的功能").. "<br><br>状态 - " .. state_msg)
+m = Map("dnsforwarder", translate("DNS Forwarder"), translate("DNS Forwarder 是企业级 DNS 服务器，可以通过 TCP 协议进行 DNS 解析,可以方便的使用 iptables 进行透明代理，配合 ipset、GFWList 使用效果更佳。默认上游服务器为 114DNS，SSR 和 Redsocks 的 GFWList 模式要依赖本软件包提供的功能").. "<br><br>状态 - " .. state_msg)
 
 s = m:section(TypedSection, "arguments", translate("通用配置"))
 s.addremove = false
