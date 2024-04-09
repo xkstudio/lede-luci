@@ -9,7 +9,7 @@ s.addremove = false
 s.anonymous = true
 
 o = s:option(Flag, "enabled", translate("Enable GFW IPSet"))
-o.description = translate("启用 DNS 防污染并打开GFW IPSet（与SSR的GFW列表模式不能同时开启）")
+o.description = translate("启用 DNS 防污染并打开 GFW IPSet（与 SSR 的 GFW 列表模式不能同时开启）")
 o.rmempty = false
 
 o = s:option(ListValue, "dns", translate("Anti-pollution DNS Server"))
