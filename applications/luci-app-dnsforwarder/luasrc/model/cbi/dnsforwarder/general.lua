@@ -25,7 +25,7 @@ else
 end
 
 if dnsforwarder_on and string.sub(listen_port,1,14) == "127.0.0.1#5053" then 
-	state_msg = state_msg .. "，DNSmasq已经将流量定向至本软件"
+	state_msg = state_msg .. "，DNSmasq 已经将流量定向至本软件"
 elseif dnsforwarder_on then
 	state_msg = state_msg .. "<b><font color=\"red\"></font></b>"
 end
@@ -44,7 +44,7 @@ s.addremove = false
 s.anonymous = true
 	view_enable = s:option(Flag, "enabled", translate("Enable"))
 	view_dnsmasq = s:option(Flag, "dnsmasq", translate("设置成DNSmasq的上游服务器"), translate("让DNSMasq从本软件获得解析结果，支持GFWList模式"))
-	view_addr = s:option(Value, "addr", translate("转发地址"), translate("请填写dnsforwarder的监听地址,默认127.0.0.1:5053,如果填写<b><font color=\"red\">208.67.222.222:5353</font></b>那么可不通过该软件获得无污染结果"))
+	view_addr = s:option(Value, "addr", translate("转发地址"), translate("请填写 DNS Forwarder 的监听地址,默认 127.0.0.1:5053，如果填写<b><font color=\"red\">208.67.222.222:5353</font></b>那么可不通过该软件获得无污染结果"))
 	view_addr.default = "127.0.0.1:5053"
 
 -- ---------------------------------------------------
