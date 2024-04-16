@@ -189,13 +189,13 @@ end
 
 local o = ""
 e = t:option(DummyValue, "remark", translate("Service Remark Name"))
-e.width = "10%"
+-- e.width = "10%"
 
 e = t:option(DummyValue, "type", translate("Frp Protocol Type"))
-e.width = "10%"
+-- e.width = "10%"
 
 e = t:option(DummyValue, "custom_domains", translate("Domain/Subdomain"))
-e.width = "20%"
+-- e.width = "20%"
 
 e.cfgvalue = function(t,n)
 local t = a.uci:get(i,n,"domain_type")or""
@@ -213,7 +213,7 @@ local b = a.uci:get(i,"common","server_addr")or"" return b end
 end
 
 e = t:option(DummyValue, "remote_port", translate("Remote Port"))
-e.width = "10%"
+-- e.width = "10%"
 e.cfgvalue = function(t,b)
 local t = a.uci:get(i,b,"type")or""
 if t==""or b==""then return""end
@@ -226,13 +226,13 @@ local b = a.uci:get(i,b,"remote_port")or"" return b end
 end
 
 e = t:option(DummyValue, "local_ip", translate("Local Host Address"))
-e.width = "15%"
+-- e.width = "15%"
 
 e = t:option(DummyValue, "local_port", translate("Local Host Port"))
-e.width = "10%"
+-- e.width = "10%"
 
 e = t:option(DummyValue, "use_encryption", translate("Use Encryption"))
-e.width = "15%"
+-- e.width = "15%"
 
 e.cfgvalue = function(t,n)
 local t = a.uci:get(i,n,"use_encryption")or""
@@ -244,7 +244,7 @@ return b
 end
 
 e = t:option(DummyValue, "use_compression", translate("Use Compression"))
-e.width = "15%"
+-- e.width = "15%"
 e.cfgvalue = function(t,n)
 local t = a.uci:get(i,n,"use_compression")or""
 local b
@@ -255,7 +255,7 @@ return b
 end
 
 e = t:option(Flag, "enable", translate("Enable State"))
-e.width = "10%"
+-- e.width = "10%"
 e.rmempty = false
 
 return a
