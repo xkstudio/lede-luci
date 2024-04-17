@@ -6,6 +6,7 @@ m.title = translate("Socat")
 m.description = translate("Socat is a versatile networking tool named after 'Socket CAT', which can be regarded as an N-fold enhanced version of NetCat")
 
 s = m:section(NamedSection, "global", "global")
+s.title = translate("Global Enable Status")
 s.anonymous = true
 s.addremove = false
 

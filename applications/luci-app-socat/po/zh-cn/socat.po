@@ -7,6 +7,9 @@ msgstr "Socat 是 Linux 下的一个多功能的网络工具，名字来由是�
 msgid "Socat Config"
 msgstr "Socat 配置"
 
+msgid "Global Enable Status"
+msgstr "全局启用状态"
+
 msgid "Status"
 msgstr "状态"
 
