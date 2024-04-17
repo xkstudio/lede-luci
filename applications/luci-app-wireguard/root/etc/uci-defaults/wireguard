@@ -1,0 +1,44 @@
+#!/bin/sh
+# Initialize for WireGuard
+# Author: Xiaok
+# Date: 2024-04-17
+# Update: 2024-04-17
+
+uci -q batch <<-EOF >/dev/null
+	delete network.wg0
+	set network.wg0=interface
+	set network.wg0.proto='wireguard'
+	set network.wg0.auto='0'
+
+	commit network
+
+	delete firewall.wireguard
+	set firewall.wireguard=zone
+	set firewall.wireguard.name='wireguard'
+	set firewall.wireguard.input='ACCEPT'
+	set firewall.wireguard.forward='ACCEPT'
+	set firewall.wireguard.output='ACCEPT'
+	set firewall.wireguard.masq='1'
+	set firewall.wireguard.network='wg0'
+
+	delete firewall.wg2lan
+	set firewall.wg2lan=forwarding
+	set firewall.wg2lan.src='wireguard'
+	set firewall.wg2lan.dest='lan'
+
+	delete firewall.wg2wan
+	set firewall.wg2wan=forwarding
+	set firewall.wg2wan.src='wireguard'
+	set firewall.wg2wan.dest='wan'
+
+	delete firewall.lan2wg
+	set firewall.lan2wg=forwarding
+	set firewall.lan2wg.src='lan'
+	set firewall.lan2wg.dest='wireguard'
+
+	commit firewall
+EOF
+
+rm -f /tmp/luci-indexcache
+
+exit 0
