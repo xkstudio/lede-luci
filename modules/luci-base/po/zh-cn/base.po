@@ -122,6 +122,9 @@ msgstr "<abbr title=\"Light Emitting Diode\">LED</abbr> 配置"
 msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Name"
 msgstr "<abbr title=\"Light Emitting Diode\">LED</abbr> 名称"
 
+msgid "Port Mask"
+msgstr "端口掩码"
+
 msgid "<abbr title=\"Media Access Control\">MAC</abbr>-Address"
 msgstr "<abbr title=\"Media Access Control\">MAC</abbr> 地址"
 
