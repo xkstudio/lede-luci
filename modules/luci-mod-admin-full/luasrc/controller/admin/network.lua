@@ -135,7 +135,7 @@ function index()
 
 		page = node("admin", "network", "diagnostics")
 		page.target = template("admin_network/diagnostics")
-		page.title  = _("Diagnostics")
+		page.title  = _("Network Diagnostics")
 		page.order  = 60
 
 		page = entry({"admin", "network", "diag_ping"}, post("diag_ping"), nil)
