@@ -21,7 +21,7 @@ function index()
 
 	local page
 
-	page = entry({"admin", "network", "sqm"}, cbi("sqm"), _("SQM QoS"))
+	page = entry({"admin", "network", "sqm"}, cbi("sqm"), _("SQM QoS"), 62)
 	page.dependent = true
 	page.acl_depends = { "luci-app-sqm" }
 end
