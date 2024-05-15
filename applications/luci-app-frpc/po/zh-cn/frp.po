@@ -41,7 +41,7 @@ msgid "Commonly used to distinguish you with other clients."
 msgstr "通常用于区分你与其他客户端"
 
 msgid "Time duration between server of frpc and frps mustn't exceed 15 minutes."
-msgstr "frpc服务器与frps之间的时间间隔不得超过15分钟"
+msgstr "frpc 服务器与 frps 之间的时间间隔不得超过 15 分钟"
 
 msgid "Vhost HTTP Port"
 msgstr "HTTP 穿透服务端口"
@@ -68,7 +68,7 @@ msgid "if tls_enable is true, frpc will connect frps by tls."
 msgstr "使用 TLS 协议与服务器连接(若连接服务器异常可以尝试开启)"
 
 msgid "Custom TLS Protocol Encryption"
-msgstr "自定义TLS协议加密"
+msgstr "自定义 TLS 协议加密"
 
 msgid "Frp supports traffic encryption between frpc and frps through the TLS protocol, and supports client or server unidirectional and bidirectional authentication."
 msgstr "frp 支持 frpc 和 frps 之间的流量通过 TLS 协议加密，并且支持客户端或服务端单向验证，双向验证等功能。"
@@ -104,7 +104,7 @@ msgid "Connect frps by HTTP PROXY"
 msgstr "通过代理连接 frps"
 
 msgid "frpc can connect frps using HTTP PROXY"
-msgstr "frpc 支持通过 HTTP PROXY 和 frps 进行通信"
+msgstr "frpc 支持通过 HTTP Proxy 和 frps 进行通信"
 
 msgid "HTTP PROXY"
 msgstr "HTTP 代理"
@@ -152,7 +152,7 @@ msgid "Enable Web API"
 msgstr "开启网页管理"
 
 msgid "set admin address for control frpc's action by http api such as reload."
-msgstr "可通过http查看客户端状态以及通过API控制"
+msgstr "可通过 http 查看客户端状态以及通过 API 控制"
 
 msgid "Admin Web Port"
 msgstr "管理员端口号"
@@ -167,7 +167,7 @@ msgid "Services List"
 msgstr "服务列表"
 
 msgid "Service Remark Name"
-msgstr "备注名"
+msgstr "备注"
 
 msgid "Domain/Subdomain"
 msgstr "域名/子域名"
@@ -212,7 +212,7 @@ msgid "SubDomain"
 msgstr "子域名"
 
 msgid "Both the above two Domain types"
-msgstr "同时使用2种域名"
+msgstr "同时使用 2 种域名"
 
 msgid "If SubDomain is used, Custom Domains couldn't be subdomain or wildcard domain of the maindomain(subdomain_host)."
 msgstr "如果服务端配置了主域名(subdomain_host)，则自定义域名不能是属于主域名(subdomain_host) 的子域名或者泛域名。"
@@ -248,7 +248,7 @@ msgid "Enable URL routing"
 msgstr "启用 URL 路由"
 
 msgid "Frp support forward http requests to different backward web services by url routing."
-msgstr "Frp 支持通过url路由将http请求转发到不同的反向web服务。"
+msgstr "Frp 支持通过 url 路由将 http 请求转发到不同的反向 web 服务。"
 
 msgid "Choose Plugin"
 msgstr "选择插件"
@@ -281,28 +281,28 @@ msgid "Rewriting the Host Header"
 msgstr "修改 Host Header"
 
 msgid "Frp can rewrite http requests with a modified Host header."
-msgstr "Frp可以用修改后的主机头重写http请求。"
+msgstr "Frp 可以用修改后的主机头重写 http 请求。"
 
 msgid "Proxy-Protocol Version"
 msgstr "Proxy-Protocol 版本"
 
 msgid "Encrypted the communication between frpc and frps, will effectively prevent the traffic intercepted (If Custom TLS Protocol Encryption is enabled, except that the protocol of xtcp is configured as kcp, you can no longer set Use Encryption to repeat encryption)."
-msgstr "将 frpc 与 frps 之间的通信内容加密传输，将会有效防止流量被拦截（启用自定义TLS协议加密后除 xtcp 的 protocol 配置为 kcp 外，可不再设置此项重复加密）。"
+msgstr "将 frpc 与 frps 之间的通信内容加密传输，将会有效防止流量被拦截（启用自定义 TLS 协议加密后除 xtcp 的 protocol 配置为 kcp 外，可不再设置此项重复加密）。"
 
 msgid "The contents will be compressed to speed up the traffic forwarding speed, but this will consume some additional cpu resources."
-msgstr "对传输内容进行压缩，加快流量转发速度，但是会额外消耗一些 cpu 资源。"
+msgstr "对传输内容进行压缩，加快流量转发速度，但是会额外消耗一些 CPU 资源。"
 
 msgid "Http username and password are safety certification for http protocol."
-msgstr "Http用户名和密码是Http协议的安全认证。"
+msgstr "Http 用户名和密码是 Http 协议的安全认证。"
 
 msgid "Proxy Protocol to send user's real IP to local services."
-msgstr "将用户的真实IP发送到本地服务的代理协议。"
+msgstr "将用户的真实 IP 发送到本地服务的代理协议。"
 
 msgid "STCP Server Name is Service Remark Name of STCP Server"
-msgstr "STCP服务器别名"
+msgstr "STCP 服务器别名"
 
 msgid "XTCP Server Name is Service Remark Name of XTCP Server"
-msgstr "XTCP服务器别名"
+msgstr "XTCP 服务器别名"
 
 msgid "<font color=\"red\">Please ensure the remark name is unique.</font>"
 msgstr "<font color=\"red\">确保备注名唯一</font>"
@@ -320,4 +320,4 @@ msgid "plugin_host_header_rewrite"
 msgstr "插件 Host Header 重写"
 
 msgid "plugin_header_X-From-Where"
-msgstr "插件X-From-Where请求头"
+msgstr "插件 X-From-Where 请求头"
