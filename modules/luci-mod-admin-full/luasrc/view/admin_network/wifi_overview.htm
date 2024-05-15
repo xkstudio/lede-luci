@@ -345,7 +345,7 @@
 								tr.insertCell(-1).innerHTML = String.format(
 									'<div style="max-width:200px;overflow:hidden;text-overflow:ellipsis">%s</div>',
 									((host.name && (host.ipv4 || host.ipv6))
-										? '%h (%s)'.format(host.name, host.ipv4 || host.ipv6)
+										? '%h<br>%s'.format(host.name, host.ipv4 || host.ipv6)
 										: '%h'.format(host.name || host.ipv4 || host.ipv6)).nobr()
 								);
 							else
