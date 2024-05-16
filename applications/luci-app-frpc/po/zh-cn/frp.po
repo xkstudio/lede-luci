@@ -269,7 +269,7 @@ msgid "Plugin Unix Sock Path"
 msgstr "Unix Sock 插件路径"
 
 msgid "Password protecting your web service"
-msgstr "密码保护您的web服务"
+msgstr "密码保护您的 Web 服务"
 
 msgid "HTTP UserName"
 msgstr "HTTP 用户名"
