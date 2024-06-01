@@ -1294,7 +1294,7 @@ msgstr "空闲数"
 msgid "Free space"
 msgstr "空闲空间"
 
-msgid "Further information about WireGuard interfaces and peers at: "
+msgid "Further information about WireGuard interfaces and peers at:"
 msgstr "有关 WireGuard 接口和 Peer 的更多信息："
 
 msgid "GHz"

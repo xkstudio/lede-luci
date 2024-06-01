@@ -1229,7 +1229,7 @@ msgstr ""
 msgid "Free space"
 msgstr ""
 
-msgid "Further information about WireGuard interfaces and peers at: "
+msgid "Further information about WireGuard interfaces and peers at:"
 msgstr ""
 
 msgid "GHz"
