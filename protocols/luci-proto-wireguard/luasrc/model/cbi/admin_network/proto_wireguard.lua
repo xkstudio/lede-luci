@@ -88,8 +88,7 @@ peers = map:section(
   TypedSection,
   "wireguard_" .. ifname,
   translate("Peers"),
-  translate("Further information about WireGuard interfaces and peers " ..
-            "at <a href=\"http://wireguard.io\">wireguard.io</a>.")
+  translate("Further information about WireGuard interfaces and peers at: ") .. "<a target=\"_blank\" href=\"http://wireguard.io\">wireguard.io</a>"
 )
 peers.template = "cbi/tsection"
 peers.anonymous = true
