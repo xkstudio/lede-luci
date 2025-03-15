@@ -50,4 +50,4 @@ msgid "PPTP VPN Server"
 msgstr "PPTP VPN 服务器"
 
 msgid "PPTP VPN Server connectivity using the native built-in VPN Client on Windows/Linux or Android"
-msgstr "使用 Windows/Linux 或者 Andriod 内置的 PPTP VPN 客户端进行连接"
+msgstr "使用 Windows/Linux 或者 Andriod 内置的 PPTP VPN 客户端进行连接。"
