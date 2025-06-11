@@ -98,21 +98,22 @@
 			<!-- scan list -->
 			<% for i, net in ipairs(scanlist(1)) do net.encryption = net.encryption or { } %>
 			<tr class="cbi-section-table-row cbi-rowstyle-<%=1 + ((i-1) % 2)%>">
-				<td class="cbi-value-field" style="width:16px; padding:3px">
+				<td class="cbi-value-field" style="vertical-align:middle; padding-right:0;">
 					<abbr title="<%:Signal%>: <%=net.signal%> <%:dB%> / <%:Quality%>: <%=net.quality%>/<%=net.quality_max%>">
 						<img src="<%=guess_wifi_signal(net)%>" /><br />
 						<small><%=percent_wifi_signal(net)%>%</small>
 					</abbr>
 				</td>
-				<td class="cbi-value-field" style="vertical-align:middle; text-align:left; padding:3px">
+				<td class="cbi-value-field" style="vertical-align:middle; text-align:left; padding:3px;">
 					<big><strong><%=net.ssid and utl.pcdata(net.ssid) or "<em>%s</em>" % translate("hidden")%></strong></big><br />
+					<strong>Signal:</strong> <%=net.signal%> <%:dB%> |
 					<strong>Channel:</strong> <%=net.channel%> |
 					<strong>Mode:</strong> <%=net.mode%> |
 					<strong>BSSID:</strong> <%=net.bssid%> |
 					<strong>Encryption:</strong> <%=format_wifi_encryption(net.encryption)%>
 				</td>
-				<td class="cbi-value-field" style="width:40px">
-					<form action="<%=url('admin/network/wireless_join')%>" method="post">
+				<td class="cbi-value-field" style="vertical-align:middle; width:40px;">
+					<form action="<%=url('admin/network/wireless_join')%>" method="post" style="margin-top:3px; margin-bottom:3px;">
 						<input type="hidden" name="token" value="<%=token%>" />
 						<input type="hidden" name="device" value="<%=utl.pcdata(dev)%>" />
 						<input type="hidden" name="join" value="<%=utl.pcdata(net.ssid)%>" />
