@@ -98,7 +98,7 @@
 			<!-- scan list -->
 			<% for i, net in ipairs(scanlist(1)) do net.encryption = net.encryption or { } %>
 			<tr class="cbi-section-table-row cbi-rowstyle-<%=1 + ((i-1) % 2)%>">
-				<td class="cbi-value-field" style="vertical-align:middle; padding-right:0;">
+				<td class="cbi-value-field" style="vertical-align:middle; padding-right:3px;">
 					<abbr title="<%:Signal%>: <%=net.signal%> <%:dB%> / <%:Quality%>: <%=net.quality%>/<%=net.quality_max%>">
 						<img src="<%=guess_wifi_signal(net)%>" /><br />
 						<small><%=percent_wifi_signal(net)%>%</small>
