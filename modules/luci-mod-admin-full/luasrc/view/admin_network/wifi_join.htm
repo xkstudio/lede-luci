@@ -108,7 +108,7 @@
 			<% for i, net in ipairs(scanlist(1)) do net.encryption = net.encryption or { } %>
 			<tr class="cbi-section-table-row cbi-rowstyle-<%=1 + ((i-1) % 2)%>">
 				<td class="cbi-value-field" style="vertical-align: middle; text-align: center; padding: 5px 10px 5px;">
-					<span title="<%=percent_wifi_signal(net)%>%" class="ifacebadge" style="padding: 2px 5px;"><img src="<%=guess_wifi_signal(net)%>"><span style="margin-left: 6px;"><%=net.signal%> dBm</span></span>
+					<span title="<%=percent_wifi_signal(net)%>%" class="ifacebadge" style="padding: 2px 5px; background-image: none; background-color: transparent;"><img src="<%=guess_wifi_signal(net)%>"><span style="margin-left: 6px;"><%=net.signal%> dBm</span></span>
 				</td>
 				<td class="cbi-value-field" style="vertical-align: middle; padding: 5px 10px 5px;"><%=net.ssid and utl.pcdata(net.ssid) or "<em>%s</em>" % translate("hidden")%></td>
 				<td class="cbi-value-field" style="vertical-align: middle; text-align: center; padding: 5px 10px 5px;"><%=net.channel%></td>
