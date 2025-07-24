@@ -261,6 +261,11 @@ if hwtype == "mac80211" then
 
 	s:taboption("advanced", Value, "frag", translate("Fragmentation Threshold"))
 	s:taboption("advanced", Value, "rts", translate("RTS/CTS Threshold"))
+
+	o = s:taboption("advanced", Value, "beacon_int", translate('Beacon Interval'));
+	o.datatype = 'range(15,65535)';
+	o.placeholder = 100;
+	o.rmempty = true;
 end
 
 
@@ -384,6 +389,11 @@ if hwtype == "mt_dbdc" then
 	s:taboption("advanced", Value, "frag", translate("Fragmentation Threshold"))
 	s:taboption("advanced", Value, "rts", translate("RTS/CTS Threshold"))
 	s:taboption("advanced", Flag, "txburst", translate("TX Bursting"))
+
+	o = s:taboption("advanced", Value, "beacon_int", translate('Beacon Interval'));
+	o.datatype = 'range(15,65535)';
+	o.placeholder = 100;
+	o.rmempty = true;
 end
 
 ----------------------- Interface -----------------------

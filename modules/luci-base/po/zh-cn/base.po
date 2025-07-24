@@ -4104,3 +4104,6 @@ msgstr "已标记"
 
 msgid "untagged"
 msgstr "未标记"
+
+msgid "Beacon Interval"
+msgstr "Beacon 间隔"
