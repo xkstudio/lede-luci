@@ -2,7 +2,7 @@
 # Initialize for WireGuard
 # Author: Xiaok
 # Date: 2024-04-17
-# Update: 2024-04-17
+# Update: 2025-09-19
 
 uci -q batch <<-EOF >/dev/null
 	delete network.wg0
@@ -19,7 +19,8 @@ uci -q batch <<-EOF >/dev/null
 	set firewall.wireguard.forward='ACCEPT'
 	set firewall.wireguard.output='ACCEPT'
 	set firewall.wireguard.masq='1'
-	set firewall.wireguard.network='wg0'
+	add_list firewall.wireguard.network='wg0'
+	add_list firewall.wireguard.network='wg6'
 
 	delete firewall.wg2lan
 	set firewall.wg2lan=forwarding
