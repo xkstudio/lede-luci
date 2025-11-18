@@ -13,10 +13,8 @@
 	<% end -%>
 
 	<div class="cbi-map">
-		<h2 name="content" style="text-align:center;"><%:Authorization Required%></h2>
-		<div class="cbi-map-descr" style="text-align:center;">
-			<%:Please enter your username and password.%>
-		</div>
+		<h2 name="content" style="text-align: center;"><%= luci.util.ubus("system", "board").hostname or "" %></h2>
+		<div class="cbi-map-descr" style="text-align: center; margin-top: 9px;"><%:Please enter your username and password%></div>
 		<fieldset class="cbi-section"><fieldset class="cbi-section-node">
 			<div class="cbi-value">
 				<label class="cbi-value-title" style="width:41px !important;margin-right:18px;text-align:justify;text-align-last:justify;"><%:Username%></label>

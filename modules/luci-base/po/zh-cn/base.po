@@ -2474,8 +2474,8 @@ msgstr "Ping"
 msgid "Pkts."
 msgstr "数据包"
 
-msgid "Please enter your username and password."
-msgstr "请输入用户名和密码。"
+msgid "Please enter your username and password"
+msgstr "请输入用户名和密码"
 
 msgid "Policy"
 msgstr "策略"
