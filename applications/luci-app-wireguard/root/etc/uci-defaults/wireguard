@@ -2,13 +2,14 @@
 # Initialize for WireGuard
 # Author: Xiaok
 # Date: 2024-04-17
-# Update: 2025-09-19
+# Update: 2025-11-19
 
 uci -q batch <<-EOF >/dev/null
 	delete network.wg0
 	set network.wg0=interface
-	set network.wg0.proto='wireguard'
 	set network.wg0.auto='0'
+	set network.wg0.proto='wireguard'
+	set network.wg0.delegate='0'
 
 	commit network
 
