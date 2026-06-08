@@ -30,7 +30,6 @@ s:taboption("general", Flag, "authoritative",
 	translate("This is the only <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</" ..
 		"abbr> in the local network"))
 
-
 s:taboption("files", Flag, "readethers",
 	translate("Use <code>/etc/ethers</code>"),
 	translate("Read <code>/etc/ethers</code> to configure the <abbr title=\"Dynamic Host " ..
@@ -62,6 +61,11 @@ aaaa = s:taboption("advanced", Flag, "filter_aaaa",
 	translate("Disable IPv6 DNS forwards"),
 	translate("Filter IPv6(AAAA) DNS Query Name Resolve"))
 aaaa.optional = true
+
+a = s:taboption("advanced", Flag, "filter_a",
+	translate("Disable IPv4 DNS forwards"),
+	translate("Filter IPv4(A) DNS Query Name Resolve"))
+a.optional = true
 
 qu = s:taboption("advanced", Flag, "quietdhcp",
 	translate("Suppress logging"),
@@ -318,6 +322,8 @@ time = s:option(Value, "leasetime", translate("Lease time"))
 time.rmempty = true
 
 hostid = s:option(Value, "hostid", translate("<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Suffix (hex)"))
+
+tag = s:option(Value, "tag", translate("Tag"))
 
 ipc.neighbors({ family = 4 }, function(n)
 	if n.mac and n.dest then
